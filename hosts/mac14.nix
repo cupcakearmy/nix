@@ -13,6 +13,7 @@
       "daisydisk"
       "blender"
       "bambu-studio"
+      "cyberduck"
     ];
     pkgs =
       pkgs: with pkgs; [
