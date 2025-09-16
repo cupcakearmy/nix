@@ -45,6 +45,7 @@ with pkgs;
   terraform
   k9s
   kubectl
+  claude-code
 
   # Editor
   nvs
