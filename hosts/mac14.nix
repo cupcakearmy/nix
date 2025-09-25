@@ -14,6 +14,7 @@
       "blender"
       "bambu-studio"
       "cyberduck"
+      "crossover"
     ];
     pkgs =
       pkgs: with pkgs; [
