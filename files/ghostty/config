@@ -1,4 +1,4 @@
 font-family = "JetBrainsMono Nerd Font"
 quit-after-last-window-closed=true
-theme = "rose-pine"
+theme = "dark:Rose Pine,light:Rose Pine Dawn"
 window-save-state = "always"
