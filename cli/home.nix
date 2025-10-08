@@ -13,7 +13,7 @@ let
     home.homeDirectory = homeDirectory;
     home = {
       shellAliases = {
-        hm = "nix run home-manager/master -- switch --flake github:cupcakearmy/nix-cli/v3#${name} -b backup";
+        hm = "nix run home-manager/master -- switch --flake github:cupcakearmy/nix?dir=cli#${name} -b backup";
       };
     };
   };
