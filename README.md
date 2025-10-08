@@ -1,5 +1,15 @@
 # Dotfiles with Nix on macOS
 
+<!--toc:start-->
+
+- [Dotfiles with Nix on macOS](#dotfiles-with-nix-on-macos)
+  - [Installation](#installation)
+  - [Documentation](#documentation)
+  - [Crypt](#crypt)
+  - [CLI](#cli)
+  - [TODO](#todo)
+  <!--toc:end-->
+
 ## Installation
 
 ```bash
@@ -41,6 +51,19 @@ git-crypt export-key - | base64 > .key.b64
 # Decode (Given the base64 key is written to .key.b64)
 cat .key.b64 | base64 --decode > .key
 git-crypt unlock .key
+```
+
+## CLI
+
+The repo also includes a setup that I use on servers which is a toned down version. It lives under `./cli`.
+
+```bash
+# Install nix & the CLI
+curl -sSL https://raw.githubusercontent.com/cupcakearmy/nix/refs/heads/main/cli/install.sh | bash
+```
+
+```
+
 ```
 
 ## TODO
