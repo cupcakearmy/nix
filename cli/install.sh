@@ -55,7 +55,8 @@ esac
 echo "Detected: $ARCH_NAME / $OS_NAME"
 echo
 
-# Prompt for user
+# Clear any remaining input and prompt for user
+read -t 0.1 -n 10000 discard 2>/dev/null || true
 echo "Select user:"
 echo "1) root"
 read -p "Enter choice [1]: " USER_CHOICE
