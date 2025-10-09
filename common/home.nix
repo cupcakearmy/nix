@@ -2,7 +2,6 @@
   pkgs,
   ...
 }:
-
 {
 
   home.stateVersion = "25.11";
@@ -19,12 +18,12 @@
     btop
     rclone
     rename
-    tmux
     tree
     wget
     rsync
     yq
     delta
+    kubectl
 
     # Rust utils
     bat
@@ -38,15 +37,14 @@
     yazi
     starship
 
-    # Dev
+    # TUI
     lazydocker
+    lazygit
     k9s
-    kubectl
 
     # Editor
     neovim
     fzf
-    lazygit
 
     # Fonts
     nerd-fonts.jetbrains-mono
@@ -78,6 +76,7 @@
   };
 
   programs = {
+    home-manager.enable = true;
     direnv.enable = true;
     zoxide.enable = true;
 
