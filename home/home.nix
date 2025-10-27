@@ -41,6 +41,7 @@ let
         c = "pwd | pbcopy";
 
         vai = "sudo darwin-rebuild switch --flake ~/.config/nix-macos#${host.hostName}";
+        clean = "nix-collect-garbage -d";
       };
     };
   };
