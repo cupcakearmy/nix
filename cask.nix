@@ -36,4 +36,5 @@
   "mediahuman-audio-converter"
   "imageoptim"
   "appcleaner"
+  "drawio"
 ]
