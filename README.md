@@ -21,7 +21,7 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Get repo
-git clone https://github.com/cupcakearmy/nix-macos ~/.config/nix-macos
+git clone https://github.com/cupcakearmy/nix-macos ~/.config/dotfiles
 
 # Unlock (Given that the base64 key is in your clipboard)
 nix shell nixpkgs#git nixpkgs#git-crypt nixpkgs#coreutils
@@ -30,7 +30,7 @@ git-crypt unlock .key
 
 # Installation
 # Available hosts can be found in the ./hosts directory
-sudo nix run nix-darwin -- switch --flake ~/.config/nix-macos#<host>
+sudo nix run nix-darwin -- switch --flake ~/.config/dotfiles#<host>
 
 # After installation simply use the provided alias to rebuild
 vai
