@@ -24,6 +24,9 @@
     yq
     delta
     kubectl
+    croc
+    asciinema_3
+    grex
 
     # Rust utils
     bat
