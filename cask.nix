@@ -15,7 +15,6 @@
   "lihaoyun6/tap/quickrecorder"
 
   # Dev
-  "docker-desktop"
   "sloth"
   "vscodium"
   "visual-studio-code"

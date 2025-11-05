@@ -17,10 +17,11 @@
     ];
     pkgs =
       pkgs: with pkgs; [
+        docker-client
+        colima
         biome
         infisical
         ffmpeg
-        pulumi
       ];
   };
 }
