@@ -6,6 +6,7 @@
   ...
 }:
 {
+  nix.enable = false;
   nix.settings = {
     experimental-features = "nix-command flakes";
     substituters = [ "https://devenv.cachix.org" ];
