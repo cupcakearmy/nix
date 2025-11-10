@@ -19,6 +19,7 @@
       pkgs: with pkgs; [
         docker-client
         colima
+        docker-buildx
         biome
         infisical
         ffmpeg
