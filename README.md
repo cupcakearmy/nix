@@ -13,9 +13,8 @@
 ## Installation
 
 ```bash
-# Install nix [without the --determinate flag]
-# ⚠️ When asked if install the determinate version say no
-curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+# Install nix
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install --determinate
 
 # Install brew [for casks]
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
