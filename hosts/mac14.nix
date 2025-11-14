@@ -14,6 +14,7 @@
       "blender"
       "bambu-studio"
       "cyberduck"
+      "kicad"
     ];
     pkgs =
       pkgs: with pkgs; [
