@@ -24,6 +24,7 @@
         biome
         infisical
         ffmpeg
+        mkcert
       ];
   };
 }
