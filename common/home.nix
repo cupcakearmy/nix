@@ -69,6 +69,9 @@
 
       # QOL
       dc = "docker compose";
+      dcl = "dc logs -f";
+      dclt = "dcl --tail 100";
+      dcln = "dcl --since 1m";
       rsync = "rsync -az --info=progress2";
       t = "tmux new-session -A -s main";
       e = "nvim";
