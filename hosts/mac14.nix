@@ -15,6 +15,8 @@
       "bambu-studio"
       "cyberduck"
       "kicad"
+      "datagrip"
+      # "nikitabobko/tap/aerospace"
     ];
     pkgs =
       pkgs: with pkgs; [
