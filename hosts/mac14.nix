@@ -11,11 +11,10 @@
       "signal"
       "discord"
       "daisydisk"
-      "blender"
       "bambu-studio"
       "cyberduck"
-      "kicad"
       "datagrip"
+      "bruno"
       # "nikitabobko/tap/aerospace"
     ];
     pkgs =

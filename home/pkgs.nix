@@ -11,7 +11,6 @@ with pkgs;
   nixpacks
   posting
   terraform
-  claude-code
   opencode
 
   # Editor
