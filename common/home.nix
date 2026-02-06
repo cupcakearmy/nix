@@ -40,6 +40,7 @@
     dust
     yazi
     starship
+    ouch
 
     # TUI
     lazydocker
