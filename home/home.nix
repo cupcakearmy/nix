@@ -20,6 +20,11 @@ let
 
     home = {
 
+      activation.zedConfig = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+        mkdir -p ~/.config
+        ln -sf ~/.config/dotfiles/secrets/zed ~/.config/zed
+      '';
+
       file = {
         ".config/ghostty/config".source = ../files/ghostty/config;
         ".gitconfig".source = ../files/git/gitconfig;

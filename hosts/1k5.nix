@@ -10,7 +10,7 @@
       "linear-linear"
       "miro"
       "loom"
-      "zed"
+      "cursor"
     ];
     pkgs =
       pkgs: with pkgs; [
