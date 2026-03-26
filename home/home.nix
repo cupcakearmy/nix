@@ -22,7 +22,10 @@ let
 
       activation.zedConfig = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
         mkdir -p ~/.config
-        ln -sf ~/.config/dotfiles/secrets/zed ~/.config/zed
+        if [ ! -L ~/.config/zed ]; then
+          rm -rf ~/.config/zed
+          ln -sf ~/.config/dotfiles/secrets/zed ~/.config/zed
+        fi
       '';
 
       file = {
