@@ -15,6 +15,9 @@
       "cyberduck"
       "datagrip"
       "bruno"
+      "transmission"
+      "iina"
+      "steam"
       # "nikitabobko/tap/aerospace"
     ];
     pkgs =

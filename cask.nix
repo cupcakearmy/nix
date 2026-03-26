@@ -22,6 +22,7 @@
   "balenaetcher"
   "outerbase-studio"
   "hoppscotch"
+  "zed"
 
   # Base
   "obsidian"
