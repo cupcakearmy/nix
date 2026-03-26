@@ -7,6 +7,7 @@
   extras = {
     casks = [
       "notion"
+      "cursor"
     ];
     pkgs =
       pkgs: with pkgs; [
