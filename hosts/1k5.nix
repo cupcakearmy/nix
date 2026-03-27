@@ -7,10 +7,20 @@
   extras = {
     casks = [
       "notion"
+      "linear-linear"
+      "miro"
+      "loom"
       "cursor"
     ];
     pkgs =
       pkgs: with pkgs; [
+        docker-client
+        colima
+        google-cloud-sdk
+        gemini-cli
+        terramate
+        ffmpeg-full
+        stripe-cli
       ];
   };
 }
