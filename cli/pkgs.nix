@@ -17,7 +17,6 @@ with pkgs;
   wget
   rsync
   yq
-  delta
 
   # Rust utils
   bat
@@ -30,6 +29,7 @@ with pkgs;
   dust
   yazi
   starship
+  difftastic
 
   # Dev
   lazydocker

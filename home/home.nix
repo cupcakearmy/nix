@@ -33,8 +33,8 @@ let
         ".gitconfig".source = ../files/git/gitconfig;
         ".gitignore_global".source = ../files/git/gitignore_global;
         ".gitconfig.local".source = ../secrets/git/config.${host.hostName};
-        ".config/nvim".source = ../files/nvim;
-        "Library/Application Support/lazydocker/config.yml".source = ../files/lazydocker/config.yml;
+        ".config/lazygit/config.yml".source = ../files/lazygit/config.yaml;
+        ".config/lazydocker/config.yml".source = ../files/lazydocker/config.yml;
 
         # Secrets
         ".ssh/config".text = builtins.replaceStrings [ "@SSH_KEY@" ] [ host.sshKey ] (
@@ -50,6 +50,10 @@ let
 
         vai = "sudo darwin-rebuild switch --flake ~/.config/dotfiles#${host.hostName}";
         clean = "nix-collect-garbage -d";
+      };
+
+      sessionVariables = {
+        XDG_CONFIG_HOME = "$HOME/.config";
       };
     };
   };

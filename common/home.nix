@@ -22,7 +22,6 @@
     wget
     rsync
     yq
-    delta
     kubectl
     croc
     asciinema_3
@@ -41,6 +40,7 @@
     yazi
     starship
     ouch
+    difftastic
 
     # TUI
     lazydocker
