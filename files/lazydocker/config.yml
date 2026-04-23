@@ -1,2 +1,14 @@
 gui:
   returnImmediately: true
+
+customCommands:
+  containers:
+    - name: "spawn sh"
+      attach: true
+      command: 'docker run -it --rm {{ .Container.ID }} sh'
+    - name: "spawn ash"
+      attach: true
+      command: 'docker run -it --rm {{ .Container.ID }} ash'
+    - name: "spawn bash"
+      attach: true
+      command: 'docker run -it --rm {{ .Container.ID }} bash'
