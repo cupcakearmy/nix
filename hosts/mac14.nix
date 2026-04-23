@@ -18,7 +18,6 @@
       "transmission"
       "iina"
       "steam"
-      # "nikitabobko/tap/aerospace"
     ];
     pkgs =
       pkgs: with pkgs; [
