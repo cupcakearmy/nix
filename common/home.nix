@@ -68,6 +68,7 @@
       ls = "eza";
       cat = "bat";
       cd = "z";
+      cdi = "zi";
 
       # QOL
       dc = "docker compose";
