@@ -21,7 +21,7 @@
     tree
     wget
     rsync
-    yq
+    yq-go
     kubectl
     croc
     asciinema_3

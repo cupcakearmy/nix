@@ -21,6 +21,8 @@ with pkgs;
 
   # Language specific
   nixfmt-rfc-style
+  nil
+  nixd
   fnm
   bun
   deno
