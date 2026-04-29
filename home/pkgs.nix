@@ -25,7 +25,6 @@ with pkgs;
   nixd
   fnm
   bun
-  deno
   zig
   uv
   ruff
