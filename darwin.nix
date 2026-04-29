@@ -41,9 +41,8 @@
       persistent-apps = [
         "/Applications/Zen.app"
         "/Applications/Ghostty.app"
-        "/Applications/Visual Studio Code.app"
+        "/Applications/Zed.app"
         "/Applications/Spotify.app"
-        "/System/Applications/System Settings.app"
       ];
       persistent-others = [ ];
     };
