@@ -5,7 +5,6 @@
   "oversight"
 
   # Utility
-  "aldente"
   "alt-tab"
   "keka"
   "jordanbaird-ice"
