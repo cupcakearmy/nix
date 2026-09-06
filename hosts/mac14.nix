@@ -17,6 +17,13 @@
       "transmission"
       "steam"
       "android-studio"
+      "opencode-desktop"
+      "anytype"
+      "linear"
+      "jan"
+      "bitwarden"
+      "freecad"
+      "blender"
     ];
     pkgs =
       pkgs: with pkgs; [
@@ -27,6 +34,8 @@
         infisical
         ffmpeg
         mkcert
+	codecrafters-cli
+	postgresql_18
       ];
   };
 }

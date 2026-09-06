@@ -11,14 +11,12 @@
   "raycast"
   "ghostty"
   "iina"
-  "shutter-encoder"
 
   # Dev
   "sloth"
   "utm"
   "bruno"
   "zed"
-
 
   # Base
   "obsidian"
