@@ -24,6 +24,7 @@
       "bitwarden"
       "freecad"
       "blender"
+      "freelens"
     ];
     pkgs =
       pkgs: with pkgs; [
