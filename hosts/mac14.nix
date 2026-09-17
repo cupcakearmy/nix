@@ -37,6 +37,7 @@
         mkcert
 	codecrafters-cli
 	postgresql_18
+	yt-dlp
       ];
   };
 }
