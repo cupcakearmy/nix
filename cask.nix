@@ -9,6 +9,7 @@
   "keka"
   "keycastr"
   "raycast"
+  "abue-ammar/tinycast/tinycast"
   "ghostty"
   "iina"
 
