@@ -14,6 +14,7 @@
     git-crypt
     gnutar
     gnupg
+    xz
     htop
     btop
     rclone
