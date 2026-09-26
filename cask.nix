@@ -12,6 +12,7 @@
   "abue-ammar/tinycast/tinycast"
   "ghostty"
   "iina"
+  "cap"
 
   # Dev
   "sloth"
