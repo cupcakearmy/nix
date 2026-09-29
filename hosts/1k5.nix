@@ -21,8 +21,6 @@
         colima
         google-cloud-sdk
         stripe-cli
-        rbw
-        pinentry-tty
       ];
   };
 }
