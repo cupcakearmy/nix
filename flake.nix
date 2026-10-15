@@ -9,6 +9,8 @@
 
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+    mole.url = "github:tw93/mole/main";
   };
 
   outputs =
@@ -17,6 +19,7 @@
       nix-darwin,
       nixpkgs,
       home-manager,
+      mole,
     }:
     let
       hosts = import ./hosts;
@@ -38,7 +41,7 @@
                 home-manager.backupFileExtension = "backup";
                 home-manager.useGlobalPkgs = true;
                 home-manager.useUserPackages = true;
-                home-manager.users.${host.username} = import ./home/home.nix { inherit host; };
+                home-manager.users.${host.username} = import ./home/home.nix { inherit host mole; };
               }
             ];
           };

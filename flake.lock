@@ -20,6 +20,25 @@
         "type": "github"
       }
     },
+    "mole": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1792049451,
+        "narHash": "sha256-600ceEZVAFrwwbek3B+KdPlu+Q+/CM7Xn6XnadnXF6g=",
+        "owner": "tw93",
+        "repo": "mole",
+        "rev": "c5ca9f6900151fb402f9ec3eab4550f82a0e9ea6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tw93",
+        "ref": "main",
+        "repo": "mole",
+        "type": "github"
+      }
+    },
     "nix-darwin": {
       "inputs": {
         "nixpkgs": [
@@ -42,6 +61,22 @@
     },
     "nixpkgs": {
       "locked": {
+        "lastModified": 1791244311,
+        "narHash": "sha256-cy5PsNucfXU5+KtLR+S9/zdkWOUplhL5Xr0LQWhSYbs=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "2bd3427b41d10b8318383195efe502ed1baca6cd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-26.05-darwin",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
         "lastModified": 1790390834,
         "narHash": "sha256-StRyS/lFHtIw/UgJk+xo+HA66mtoWeDUbkJdvf2Byn4=",
         "owner": "NixOS",
@@ -59,8 +94,9 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
+        "mole": "mole",
         "nix-darwin": "nix-darwin",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs_2"
       }
     }
   },
