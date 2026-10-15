@@ -1,4 +1,4 @@
-{ host }:
+{ host, mole }:
 {
   pkgs,
   lib,
@@ -14,6 +14,7 @@ let
     home.packages =
       common.home.packages
       ++ (import ./pkgs.nix { inherit pkgs; })
+      ++ [ mole.packages.${host.platform}.mole ]
       ++ ((lib.attrByPath [ "extras" "pkgs" ] (pkgs: [ ]) host) pkgs);
 
     fonts.fontconfig.enable = true;

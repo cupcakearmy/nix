@@ -6,13 +6,13 @@
 
   # Utility
   "alt-tab"
-  "keka"
+  "macpacker"
   "keycastr"
-  "raycast"
   "abue-ammar/tinycast/tinycast"
   "ghostty"
   "iina"
   "cap"
+  "macusb"
 
   # Dev
   "sloth"

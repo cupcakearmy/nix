@@ -7,7 +7,6 @@ with pkgs;
   woff2
 
   # Dev
-  devenv
   nixpacks
   posting
   opencode
@@ -26,8 +25,6 @@ with pkgs;
   nixd # Nix
 
   # Language specific
-  nil
-  nixd
   bun
   zig
   uv
