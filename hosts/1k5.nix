@@ -14,6 +14,7 @@
       "bruno"
       "cyberduck"
       "slack"
+      "discord"
     ];
     pkgs =
       pkgs: with pkgs; [
