@@ -12,9 +12,10 @@
       "loom"
       "cursor"
       "bruno"
-      "cyberduck"
       "slack"
       "discord"
+      "1password"
+      "beekeeper-studio"
     ];
     pkgs =
       pkgs: with pkgs; [
@@ -22,6 +23,7 @@
         colima
         google-cloud-sdk
         stripe-cli
+        _1password-cli
       ];
   };
 }
