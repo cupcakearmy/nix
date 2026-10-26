@@ -25,19 +25,19 @@
       "freecad"
       "blender"
       "freelens"
+      "tailscale-app"
     ];
     pkgs =
       pkgs: with pkgs; [
         docker-client
         colima
         docker-buildx
-        biome
-        infisical
         ffmpeg
         mkcert
 	codecrafters-cli
 	postgresql_18
 	yt-dlp
+	exiftool
       ];
   };
 }
