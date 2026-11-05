@@ -54,6 +54,9 @@
       "com.apple.mouse.tapBehavior" = 1;
       "com.apple.trackpad.scaling" = 0.875;
     };
+    ".GlobalPreferences" = {
+      "com.apple.mouse.scaling" = 0.5;
+    };
     trackpad = {
       Dragging = true;
       Clicking = true;
@@ -87,7 +90,7 @@
   homebrew = {
     enable = true;
     casks = (import ./cask.nix) ++ (lib.attrByPath [ "extras" "casks" ] [ ] host);
-    taps = [];
+    taps = [ ];
     global = {
       autoUpdate = true;
     };
@@ -95,7 +98,7 @@
       autoUpdate = true;
       upgrade = true;
       cleanup = "zap";
-      extraFlags = ["--force" ];
+      extraFlags = [ "--force" ];
     };
   };
 }

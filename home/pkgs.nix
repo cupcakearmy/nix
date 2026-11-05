@@ -11,6 +11,9 @@ with pkgs;
   posting
   opencode
 
+  # TUI
+  (callPackage ../pkgs/crtui.nix { })
+
   # NVim
   nvs
   lua
