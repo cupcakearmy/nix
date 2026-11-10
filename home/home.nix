@@ -7,6 +7,9 @@
 }:
 let
   common = (import ../common/home.nix) { inherit pkgs; };
+  dots = "${config.home.homeDirectory}/.config/dotfiles";
+  # Symlink into the repo instead of /nix/store, so the target stays writable.
+  link = rel: { source = config.lib.file.mkOutOfStoreSymlink "${dots}/${rel}"; };
   overwrite = {
     home.username = host.username;
     home.homeDirectory = "/Users/${host.username}";
@@ -21,15 +24,13 @@ let
 
     home = {
 
-      activation.zedConfig = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
-        mkdir -p ~/.config
-        if [ ! -L ~/.config/zed ]; then
-          rm -rf ~/.config/zed
-          ln -sf ~/.config/dotfiles/secrets/zed ~/.config/zed
-        fi
-      '';
-
       file = {
+        # Writable symlinks into the repo
+        ".config/zed" = link "secrets/zed";
+        ".agents" = link "files/agents";
+        ".config/opencode/AGENTS.md" = link "secrets/opencode/AGENTS.md";
+
+        # Read Only
         ".config/ghostty/config".source = ../files/ghostty/config;
         ".gitconfig".source = ../files/git/gitconfig;
         ".gitignore_global".source = ../files/git/gitignore_global;
