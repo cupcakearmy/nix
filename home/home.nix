@@ -50,7 +50,7 @@ let
         c = "pwd | pbcopy";
 
         vai = "sudo darwin-rebuild switch --flake ~/.config/dotfiles#${host.hostName}";
-        clean = "nix-collect-garbage -d";
+        clean = "nix profile wipe-history && nix store gc && nix store optimise";
       };
 
       sessionVariables = {
