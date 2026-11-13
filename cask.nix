@@ -7,7 +7,7 @@
   # Utility
   "macpacker"
   "keycastr"
-  "abue-ammar/tinycast/tinycast"
+  "tinycast"
   "ghostty"
   "iina"
   "cap"
