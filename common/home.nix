@@ -84,7 +84,6 @@
       g = "lazygit";
       d = "lazydocker";
       k = "kubectl";
-      colima-start = "colima start --cpu 4 --memory 8 --vm-type=vz --vz-rosetta";
     };
   };
 

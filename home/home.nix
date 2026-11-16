@@ -27,6 +27,7 @@ let
       file = {
         # Writable symlinks into the repo
         ".config/zed" = link "secrets/zed";
+        ".colima/_templates/default.yaml" = link "files/colima/colima.yaml";
         ".agents" = link "files/agents";
         ".config/opencode/AGENTS.md" = link "secrets/opencode/AGENTS.md";
 
