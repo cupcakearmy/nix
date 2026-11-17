@@ -30,6 +30,7 @@ let
         ".colima/_templates/default.yaml" = link "files/colima/colima.yaml";
         ".agents" = link "files/agents";
         ".config/opencode/AGENTS.md" = link "secrets/opencode/AGENTS.md";
+        ".config/tinycast/settings.json" = link "files/tinycast/settings.json";
 
         # Read Only
         ".config/ghostty/config".source = ../files/ghostty/config;
